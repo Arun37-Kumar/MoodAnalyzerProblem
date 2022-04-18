@@ -33,7 +33,19 @@ namespace MoodAnalyzerProblemUnitTest
             string actual = mood.MoodAnalyser(message);
             //ASSERT
             Assert.AreEqual(expected, actual);
-
         }
+
+        [TestCategory("Returns happy")]
+        [TestMethod]
+        public void TestCase2()
+        {
+            string message = null;
+            string expected = "happy";
+            MoodAnalysis mood = new MoodAnalysis();
+
+            string actualMood = mood.MoodAnalyser(message);
+            Assert.AreEqual(actualMood,expected);
+        }
+
     }
 }

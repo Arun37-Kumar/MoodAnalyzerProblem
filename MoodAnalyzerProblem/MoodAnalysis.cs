@@ -26,7 +26,8 @@ namespace MoodAnalyzerProblem
                 return "sad";
             }
         }
-
+        
+ 
         public string MoodAnalyser()
         {
             try
@@ -41,6 +42,7 @@ namespace MoodAnalyzerProblem
                 return "happy";
             }
         }
+        
     }
 }
     
