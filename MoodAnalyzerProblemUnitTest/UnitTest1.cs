@@ -21,6 +21,8 @@ namespace MoodAnalyzerProblemUnitTest
             Assert.AreEqual(expected, actual);
         }
 
+        [TestCategory("Happy Mood")]
+        [TestMethod]
         public void HappyMoodTest()
         {
             //ARRANGE
