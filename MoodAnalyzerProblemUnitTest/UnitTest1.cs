@@ -8,18 +8,29 @@ namespace MoodAnalyzerProblemUnitTest
     public class UnitTest1
     {
         [TestCategory("Sad mood")]
-        [DataRow("I am sad","sad")]
         [TestMethod]
-        public void MoodTest()
+        public void SadMoodTest()
         {
-            //string message = "I am sad.";
-            //string expected = "sad";
-
+            //ARRANGE
+            string message = "I am sad.";
+            string expected = "sad";
             MoodAnalysis mood = new MoodAnalysis();
+            //ACT
+            string actual = mood.MoodAnalyser(message);
+            //ASSERT
+            Assert.AreEqual(expected, actual);
+        }
 
-            string actual = mood.Mood(message);
-
-            Assert.AreEqual(expected,actual);
+        public void HappyMoodTest()
+        {
+            //ARRANGE
+            string message = "I am happy.";
+            string expected = "happy";
+            MoodAnalysis mood = new MoodAnalysis();
+            //ACT
+            string actual = mood.MoodAnalyser(message);
+            //ASSERT
+            Assert.AreEqual(expected, actual);
 
         }
     }

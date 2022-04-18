@@ -9,7 +9,25 @@ namespace MoodAnalyzerProblem
     public class MoodAnalysis
     {
         public string message;
-        public string Mood(string message)
+
+        public MoodAnalysis()
+        {
+            message = message;
+        }
+
+        public string MoodAnalyser(string message)
+        {
+            if (message.ToLower().Contains("happy"))
+            {
+                return "happy";
+            }
+            else
+            {
+                return "sad";
+            }
+        }
+
+        public string MoodAnalyser()
         {
             if (message.ToLower().Contains("happy"))
             {

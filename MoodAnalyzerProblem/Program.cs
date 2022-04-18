@@ -15,7 +15,8 @@ namespace MoodAnalyzerProblem
             Console.WriteLine("Enter the message : ");
             string message = Console.ReadLine();
             MoodAnalysis mood = new MoodAnalysis();
-            Console.WriteLine("Mood is : " + mood.Mood(message));
+            Console.WriteLine("Mood is : " + mood.MoodAnalyser(message));
+            Console.WriteLine("Mood is : " + mood.MoodAnalyser("I am sad"));
             Console.ReadLine();
         }
     }
