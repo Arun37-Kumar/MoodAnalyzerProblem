@@ -21,7 +21,7 @@ namespace MoodAnalyzerProblem
             //factor.CreatemoodAnalyse("I am happy","CreatemoodAnalyse");
             //factor.CreateMoodAnalyseParameterObject("MoodAnalyserFactory","I am sad", "CreateMoodAnalyseParameterObject");
             //factor.InvokeAnalyseMood("I am happy","MoodAnalyser");
-            factor.SetField("I am happy","MoodAnalyser");
+            //factor.SetField("I am happy","MoodAnalyser");
             Console.ReadLine();
         }
     }

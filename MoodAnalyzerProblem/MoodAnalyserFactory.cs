@@ -8,7 +8,7 @@ using System.Reflection;
 
 namespace MoodAnalyzerProblem
 {
-    class MoodAnalyserFactory
+    public class MoodAnalyserFactory
     {
         public object CreatemoodAnalyse(string className, string constructorName)
         {
