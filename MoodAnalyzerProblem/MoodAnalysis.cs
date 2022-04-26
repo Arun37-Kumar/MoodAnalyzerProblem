@@ -36,7 +36,6 @@ namespace MoodAnalyzerProblem
             catch(NullReferenceException)
             {
                 throw new CustomException(CustomException.ExceptionType.NULL_MOOD, "Mood should not be null!");
-
             }
         }
 
