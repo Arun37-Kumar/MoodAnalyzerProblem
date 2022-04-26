@@ -17,6 +17,10 @@ namespace MoodAnalyzerProblem
             MoodAnalysis mood = new MoodAnalysis(message);
             Console.WriteLine("Mood is : " + mood.MoodAnalyser());
             //Console.WriteLine("Mood is : " + mood.MoodAnalyser("I am sad"));
+            MoodAnalyserFactory factor = new MoodAnalyserFactory();
+            //factor.CreatemoodAnalyse("I am happy","CreatemoodAnalyse");
+            //factor.CreateMoodAnalyseParameterObject("MoodAnalyserFactory","I am sad", "CreateMoodAnalyseParameterObject");
+            factor.InvokeAnalyseMood("I am happy","MoodAnalyser");
             Console.ReadLine();
         }
     }
