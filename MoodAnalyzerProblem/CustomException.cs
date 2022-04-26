@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace MoodAnalyzerProblem
 {
     public class CustomException : Exception
@@ -11,7 +12,7 @@ namespace MoodAnalyzerProblem
         public ExceptionType exceptionType;
         public enum ExceptionType
         {
-            NULL_MOOD,EMPTY_MOOD    
+            NULL_MOOD,EMPTY_MOOD ,NO_SUCH_METHOD,NO_SUCH_CLASS   
         }
 
         public CustomException(ExceptionType exceptionType,string message) : base(message)
